@@ -2,7 +2,7 @@ package oop09.test03;
 
 import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
 
-//局部内部表
+//局部内部类
 public class OuterClass {
     private static int x = 1; //静态变量
     private int y = 2;  //实例变量
@@ -16,7 +16,7 @@ public class OuterClass {
     //在实例方法中,可以直接访问实例相关数据和静态相关数据
     public void test(){
         int i = 100; //局部变量
-        //定义局部内部表
+        //定义局部内部类
         class InnerClass1{
             public void print(){
                 System.out.println(i);
@@ -33,7 +33,7 @@ public class OuterClass {
     //在静态方法中,可以直接访问静态数据,但无法直接访问实例数据
     public static void test03(){
         int i = 100; //局部变量
-        //定义局部内部表
+        //定义局部内部类
         class InnerClass2{
             public void print(){
                 System.out.println(i);
