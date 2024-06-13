@@ -17,7 +17,7 @@ public class ArrayTest01 {
     public void testToString(){
         //基本类型数组
         int[] num = {1,2,3,4,5,6};
-        //这样相当于调用引用num的toString()方法,没有重写的话,相当于调用Object类中的toString()方面
+        //这样相当于调用引用num的toString()方法,没有重写的话,相当于调用Object类中的toString()方法
         System.out.println(num.toString());
 
         System.out.println(Arrays.toString(num));
