@@ -137,6 +137,7 @@ public class Stock {
                     }
                     allBook[i] = new BookItem();
                     allBook[i].setBook(new FictionBook(name, bookAuthor, bookPrince, ISBN, level));
+                    allBook[i].condition = true;
                     System.out.println("添加书籍成功!");
                     return;
                 } else if (type.equals("非小说")) {
@@ -147,6 +148,7 @@ public class Stock {
                     }
                     allBook[i] = new BookItem();
                     allBook[i].setBook(new FictionBook(name, bookAuthor, bookPrince, ISBN, topic));
+                    allBook[i].condition = true;
                     System.out.println("添加书籍成功!");
                     return;
                 }
@@ -167,6 +169,7 @@ public class Stock {
             allBook = newAllBook;
             allBook[allBook.length / 2] = new BookItem();
             allBook[allBook.length / 2].setBook(new FictionBook(name, bookAuthor, bookPrince, ISBN, level));
+            allBook[allBook.length / 2].condition = true;
             System.out.println("添加书籍成功!");
         } else if (type.equals("非小说")) {
             System.out.print("请输入书籍主题(科学,历史,军事,体育):");
@@ -179,6 +182,7 @@ public class Stock {
             allBook = newAllBook;
             allBook[allBook.length / 2] = new BookItem();
             allBook[allBook.length / 2].setBook(new NonFictionBook(name, bookAuthor, bookPrince, ISBN, topic));
+            allBook[allBook.length / 2].condition = true;
             System.out.println("添加书籍成功!");
         }
     }

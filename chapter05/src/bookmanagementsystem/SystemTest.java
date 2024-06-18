@@ -120,7 +120,7 @@ public class SystemTest {
                             if (stock.allBook[index].isCondition()) {
                                 stock.allBook[index].borrowBook();
                             } else {
-                                System.out.println("该书已被借阅!");
+                                System.out.println("图书借阅失败,该书在您借阅之前已被借阅!");
                             }
                         }
                     }
@@ -170,7 +170,7 @@ public class SystemTest {
                             if (!stock.allBook[index].isCondition()) {
                                 stock.allBook[index].returnBook();
                             } else {
-                                System.out.println("该书已经归还!");
+                                System.out.println("图书归还失败,该书在您归还之前已经归还!");
                             }
                         }
                     }
@@ -253,7 +253,7 @@ public class SystemTest {
                             if (stock.allBook[index].isCondition()) {
                                 stock.allBook[index].borrowBook();
                             } else {
-                                System.out.println("该书已被借阅!");
+                                System.out.println("图书借阅失败,该书在您借阅之前已被借阅!");
                             }
                         }
                     }
@@ -303,7 +303,7 @@ public class SystemTest {
                             if (!stock.allBook[index].isCondition()) {
                                 stock.allBook[index].returnBook();
                             } else {
-                                System.out.println("该书已经归还!");
+                                System.out.println("图书归还失败,该书在您归还之前已经归还!");
                             }
                         }
                     }
